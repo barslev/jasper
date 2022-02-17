@@ -18,6 +18,9 @@ export const rules: Rule<any>[] = [
                 console.log(context.root);
                 setTimeout(() => {
                     console.log(`[${context.contextId}] email sent!`);
+                    /* TODO: JSFix could not patch the breaking change:
+                    Calling .next on a Subject without passing a value is no longer allowed 
+                    Suggested fix: Pass undefined to preserve old behavior. */
                     subsriber.next();
                     subsriber.complete();
                 }, Math.random() * 1000);

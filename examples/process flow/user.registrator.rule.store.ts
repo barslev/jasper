@@ -18,7 +18,7 @@ export const rules: Rule<any>[] = [
                 console.log(context.root);
                 setTimeout(() => {
                     console.log(`[${context.contextId}] email sent!`);
-                    subsriber.next();
+                    subsriber.next(undefined);
                     subsriber.complete();
                 }, Math.random() * 1000);
             }),

@@ -33,7 +33,7 @@
     "jsonata": "^1.8.4",
     "lodash": "^4.17.21",
     "object-hash": "^2.1.1",
-    "rxjs": "^6.6.6"
+    "rxjs": "^7.0.0"
   },
   "devDependencies": {
     "@types/eslint": "^7.2.7",

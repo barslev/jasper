@@ -1,8 +1,9 @@
 name: Coana Vulnerability Analysis
  
 on:
-  schedule:
-    - cron: '0 3 * * *' # every day at 3 AM
+  push:
+    branches:
+      - master
  
 jobs:
   coana-vulnerability-analysis:
